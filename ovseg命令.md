@@ -36,6 +36,27 @@ python3 demo.py --config-file configs/ovseg_swinB_vitL_demo.yaml --class-names '
 
 
 
+报错：AttributeError: module 'PIL.Image' has no attribute 'LINEAR'
+
+transforms.py line46
+
+```python
+  def __init__(self, src_rect, output_size, interp=Image.BILINEAR, fill=0):#1.18LINEAR
+```
+
+
+
+报错：AttributeError: module 'numpy' has no attribute 'int'.
+
+predictor.py line124
+
+​      pred_mas
+
+```python
+            pred_mask = np.array(pred_mask, dtype=int)#1.18np.int
+```
+
+
 ```
 在lanyun上缺一个东西:
 
