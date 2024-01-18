@@ -50,7 +50,6 @@ transforms.py line46
 
 predictor.py line124
 
-​      pred_mas
 
 ```python
             pred_mask = np.array(pred_mask, dtype=int)#1.18np.int
